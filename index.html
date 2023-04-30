@@ -131,6 +131,7 @@
 							<h2>Get in touch</h2>
 	
 							<div class="split style1">
+								<!---
 								<section>
 									<form method="post" action="#">
 										<div class="fields">
@@ -152,19 +153,34 @@
 										</ul>
 									</form>
 								</section>
+								--->
 								<section>
 									<ul class="contact">
 										<li>
 											<h3>Email</h3>
 											<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfrgk9R-2feQomcbYLuU9C8-VWnFOJKsCzbYXgGdPN6Wm30KQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
-												First name:<br>
-												<input type="text" name="entry.1964595566" id="entry.1964595566"><br>
-												Last name:<br>
-												<input type="text" name="entry.171515512" id="entry.171515512"><br>
-												Email Address:<br>
-												<input type="text" name="entry.2132661607" id="entry.2132661607"><br>
-												Message: <br>
-												<input type="text" name="entry.951277603" id="entry.951277603">
+												<div class="fields">
+													<div class="field half">
+													<label for="first name">First Name</label>
+													<input type="text" name="entry.1964595566" id="entry.1964595566" />
+													</div>
+												<div class="field half">
+													<label for="last name">Last Name</label>
+													<input type="text" name="entry.171515512" id="entry.171515512" />
+													</div>
+												<div class="field half">
+													<label for="email address">Email Address</label>
+													<input type="text" name="entry.2132661607" id="entry.2132661607" />
+													</div>
+												<div class="field half">
+													<label for="subject">Subject</label>
+													<input type="text" name="entry.1950149862" id="entry.1950149862" />
+													</div>
+												<div class="field">
+													<label for="message">Message</label>
+													<textarea name="entry.951277603" id="entry.951277603" rows="5"></textarea>
+													</div>
+												</div>
 												<input type="submit" value="Submit">
 											</form>
 											<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
