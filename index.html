@@ -156,7 +156,18 @@
 									<ul class="contact">
 										<li>
 											<h3>Email</h3>
-											<a href="julie@julie-adams.org">julie@julie-adams.org</a>
+											<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSfrgk9R-2feQomcbYLuU9C8-VWnFOJKsCzbYXgGdPN6Wm30KQ/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+												First name:<br>
+												<input type="text" name="entry.1964595566" id="entry.1964595566"><br>
+												Last name:<br>
+												<input type="text" name="entry.171515512" id="entry.171515512"><br>
+												Email Address:<br>
+												<input type="text" name="entry.2132661607" id="entry.2132661607"><br>
+												Message: <br>
+												<input type="text" name="entry.951277603" id="entry.951277603">
+												<input type="submit" value="Submit">
+											</form>
+											<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 										</li>
 										<!--- <li>
 											<h3>Social</h3>
@@ -193,6 +204,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+				$('#gform').on('submit', function(e) {
+  				$('#gform *').fadeOut(2000);
+  				$('#gform').prepend('Your submission has been processed...');
+  					});	
+			</script>
 
 	</body>
 </html>
