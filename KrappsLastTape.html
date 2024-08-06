@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Photos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="photos.html" class="title">My Work</a>
+				
+				<nav>
+					<ul>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="index.html#one" class="active">About Me</a></li>
+							<li><a href="photos.html" class="active">Photos</a></li>
+							<li><a href="video.html" class="active">Videos</a></li>
+							<li><a href="index.html#three" class="active">Contact Me</a></l>
+						</ul>
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<h1 class="major">Krapp's Last Tape</h1>
+						<h4><i>The Den Theatre, Chicago, IL</h5>
+							<div class="slideshow-container">
+
+								<div class="mySlides fade">
+								  <div class="numbertext">1 / 6</div>
+								  <img src="images/KrappsLastTape/Krapps Last Tape.jfif" style="width:100%">
+								  <div class="text"></div>
+								</div>
+								
+								<div class="mySlides fade">
+								  <div class="numbertext">2 / 6</div>
+								  <img src="images/KrappsLastTape/Krapps Last Tape2.jfif" style="width:100%">
+								  <div class="text"></div>
+								</div>
+								
+								<div class="mySlides fade">
+								  <div class="numbertext">3 / 6</div>
+								  <img src="images/KrappsLastTape/KRAPPSDH7-2_JAdams.jfif" style="width:100%">
+								  <div class="text"></div>
+								</div>
+
+								<div class="mySlides fade">
+									<div class="numbertext">4 / 6</div>
+									<img src="images/KrappsLastTape/KRAPPSDH7-3_JAdams.jpg" style="width:100%">
+									<div class="text"></div>
+								  </div>
+
+								  <div class="mySlides fade">
+									<div class="numbertext">5 / 6</div>
+									<img src="images/KrappsLastTape/KRAPPSDH7_JAdams.jpg" style="width:100%">
+									<div class="text"></div>
+								  </div>
+
+								  <div class="mySlides fade">
+									<div class="numbertext">6 / 6</div>
+									<img src="images/KrappsLastTape/KrappsLasttape.pic.jpg" style="width:100%">
+									<div class="text"></div>
+								  </div>
+								
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+								<a class="next" onclick="plusSlides(1)">❯</a>
+								
+								</div>
+								<br>
+								
+								<div style="text-align:center">
+								  <span class="dot" onclick="currentSlide(1)"></span> 
+								  <span class="dot" onclick="currentSlide(2)"></span> 
+								  <span class="dot" onclick="currentSlide(3)"></span>
+								  <span class="dot" onclick="currentSlide(4)"></span>
+								  <span class="dot" onclick="currentSlide(5)"></span>
+								  <span class="dot" onclick="currentSlide(6)"></span> 
+								</div>
+								
+								<script>
+								let slideIndex = 1;
+								showSlides(slideIndex);
+								
+								function plusSlides(n) {
+								  showSlides(slideIndex += n);
+								}
+								
+								function currentSlide(n) {
+								  showSlides(slideIndex = n);
+								}
+								
+								function showSlides(n) {
+								  let i;
+								  let slides = document.getElementsByClassName("mySlides");
+								  let dots = document.getElementsByClassName("dot");
+								  if (n > slides.length) {slideIndex = 1}    
+								  if (n < 1) {slideIndex = slides.length}
+								  for (i = 0; i < slides.length; i++) {
+									slides[i].style.display = "none";  
+								  }
+								  for (i = 0; i < dots.length; i++) {
+									dots[i].className = dots[i].className.replace(" active", "");
+								  }
+								  slides[slideIndex-1].style.display = "block";  
+								  dots[slideIndex-1].className += " active";
+								}
+								</script>
+						
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
